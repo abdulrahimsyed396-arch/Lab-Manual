@@ -24,8 +24,7 @@ class MyHashSet {
 
     public void remove(int key) {
         int index = hash(key);
-        buckets[index].remove((Integer) key); // Cast to Integer object to remove value, not index
-    }
+        buckets[index].remove((Integer) key); 
 
     public boolean contains(int key) {
         int index = hash(key);
